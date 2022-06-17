@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+/* === NAVBAR === */
+header{
+    background-color: #7FAEB1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid .5rem #40595A;
+    color: #40595A;
+    padding: 0 1rem 0 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li, h1 {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
