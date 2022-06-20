@@ -56,6 +56,7 @@ nav li, h1 {
 .top-part {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .rect{
@@ -102,9 +103,10 @@ nav li, h1 {
     bottom: 0;
 }
 
-.container-position2{
+.container-position{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .text{
