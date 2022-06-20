@@ -16,13 +16,17 @@
 
 /* === NAVBAR === */
 header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: solid .5rem #40595A;
     color: #40595A;
     padding: 0 1rem 0 1rem;
-    margin-bottom: 3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -44,8 +48,9 @@ nav li, h1 {
 /* === POSITION === */
 
 .container{
+    position: relative;
+    padding: 6rem;
     margin: 0 auto;
-    margin-bottom: 3rem;
 }
 
 .top-part {
@@ -105,10 +110,15 @@ nav li, h1 {
 .text{
     max-width: 370px;
     padding-top: 1rem;
+    text-align: justify;
 }
 
 .text-2{
     padding-left: 15px;
+}
+
+.padding{
+    padding: 1rem;
 }
 
 /* === FOOTER === */
