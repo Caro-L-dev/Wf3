@@ -45,10 +45,10 @@ nav li, h1 {
 
 .container{
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 .top-part {
-    /* background-color: blue; */
     display: flex;
     justify-content: center;
 }
@@ -95,4 +95,41 @@ nav li, h1 {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+.container-position2{
+    display: flex;
+    justify-content: center;
+}
+
+.text{
+    max-width: 370px;
+    padding-top: 1rem;
+}
+
+.text-2{
+    padding-left: 15px;
+}
+
+/* === FOOTER === */
+
+footer{
+    border-top: 5px solid #40595A;
+    color: white;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+}
+
+.links li{
+    margin: .5rem;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
 }
