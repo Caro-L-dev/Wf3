@@ -1,21 +1,30 @@
 main {
     padding: 2rem;
+
+    @media only screen and (min-width: 900px) {
+        padding: 6rem 7rem;
+    }
 }
 
 /* === TOP PART === */
 .top-part {
-    display: flex;
     justify-content: center;
     padding: 6rem 2rem;
     text-align: center;
+
+    .top-part__container {
+        display: flex;
+        flex-direction: column;
+    }
 
     .box {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        img {
-            width: 40%;
+        i {
+            font-size: 3rem;
+            margin-bottom: 2rem;
         }
 
         h2 {
@@ -25,14 +34,41 @@ main {
         }
 
         p {
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+        padding: 0;
+
+        .top-part__container {
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 5rem;
+            justify-content: space-between;
+
+            .box {
+                margin-right: 2rem;
+            }
         }
     }
 }
 
 /* === PICTURES PART === */
-.pictures{
+.pictures {
     margin-bottom: 10rem;
+}
+
+.pictures__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media only screen and (min-width: 900px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
 }
 
 .decoration-bar {
@@ -49,19 +85,26 @@ main {
     font-size: 2rem;
     margin-bottom: 2rem;
 
-    // height: 100%;
-    // overflow: hidden;
-    // position: absolute;
+    width: 326px;
+    height: 341px;
+    overflow: hidden;
 
-    .overlay{
-        background: rgba(50, 70, 80, 0.7);
-        overflow: hidden;
+    transition: ease-in .3s;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
         height: 100%;
+        background-color: rgba(66, 21, 126, 0.3);
+        border-radius: .5rem;
     }
 
-    img{
+    img {
         border: none;
         border-radius: .5rem;
+        height: 100%;
     }
 
     .text {
@@ -69,5 +112,14 @@ main {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+        box-shadow: 7px 8px 0px -1px #4A138F;
+        border-radius: .5rem;
+    }
+
+    @media only screen and (min-width: 900px) {
+        margin-right: 2rem;
     }
 }

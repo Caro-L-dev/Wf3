@@ -10,10 +10,26 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 .title {
+    position: relative;
     font-weight: bold;
     margin-bottom: 1rem;
     font-size: 1.5rem;
+}
+
+.title:after{
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 100px;
+
+    background-color: #472F88;
+    bottom: 0;
+    left: 0;
+    border-radius: 15px;
+
+    margin-top: 1rem;
 }
 
 .subtitle {

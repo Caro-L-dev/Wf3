@@ -28,5 +28,21 @@ header{
 
         border: none;
         border-radius: 10px;
+
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    header{
+        padding: 6rem 7rem;
+
+        .header__container{
+            max-width: 500px;
+
+            button{
+                width: 200px;
+            }
+        }
     }
 }
