@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: flex;
+  padding: 6rem 2rem 2rem 2rem;
+}
+header img, header h1, header p {
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+header p {
+  line-height: 1.2rem;
+}
+header button {
+  width: 100%;
+  padding: 1rem;
+  color: #472F88;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* === TOP PART === */
+.top-part {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+.top-part .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.top-part .box img {
+  width: 40%;
+}
+.top-part .box h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.top-part .box p {
+  margin-bottom: 2rem;
+}
+
+/* === PICTURES PART === */
+.pictures {
+  margin-bottom: 10rem;
+}
+
+.decoration-bar {
+  width: 100px;
+  height: 10px;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+}
+
+.picture {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.picture .overlay {
+  background: rgba(50, 70, 80, 0.7);
+  overflow: hidden;
+  height: 100%;
+}
+.picture img {
+  border: none;
+  border-radius: 0.5rem;
+}
+.picture .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+footer .footer__container div {
+  margin-bottom: 3rem;
+}
+footer .footer__container .social-media__container {
+  justify-content: center;
+  align-items: center;
+}
+footer h3, footer p {
+  margin-bottom: 1rem;
+}
+footer .adress h3 {
+  margin-bottom: 2rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-bg-color {
+  background-color: #472F88;
+}
+
+.light-text-color {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+@import "./reset.scss";
+@import "header.scss";
+@import "./home.scss";
+@import "./footer.scss";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-bg-color{
+    background-color: #472F88;
+}
+
+.light-text-color{
+    color: white;
+}
