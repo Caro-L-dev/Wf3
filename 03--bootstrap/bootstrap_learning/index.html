@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/41d6b020fe.js" crossorigin="anonymous"></script>
+    <title>Bootstrap learning</title>
+</head>
+
+<body>
+    <!-- === NAVBAR START === -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">The Surfing Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Le programme</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Nos prochaines sessions</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- === NAVBAR END === -->
+
+    <!-- === HERO START === -->
+    <div class="bg-image p-5 text-center mb-5 text-white" style="background-image: url('https://www.mango-surf.com/lib/image/photo/keala-kennelly-repousse-limites-surf-gros-feminin-7248-1.jpg');
+                height: 50vh;">
+        <h1 class="mb-3">Partez à l'aventure</h1>
+        <p>
+            Découvrez notre école de surf en pee-learning
+        </p>
+        <button type="button" class="btn btn-primary">Je m'inscris à la prochaine session</button>
+        <button type="button" class="btn btn-secondary">Je découvre la prochaine session</button>
+    </div>
+    <!-- === HERO END === -->
+
+    <!-- === TOP PART START === -->
+    <div class="container mt-5 text-center">
+
+        <h2 class="mb-5">The Surfing Project en 3 points</h2>
+
+        <div class="row">
+
+            <div class="col-md-4 mt-1">
+                <i class="fas fa-money-bill-wave-alt fa-4x text-primary"></i>
+                <h3>Pas chère</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iure vitae laudantium, deserunt
+                    architecto accusamus ad, vero, ipsam commodi pariatur qui beatae labore quae adipisci expedita esse.
+                    Iste aliquid quae quam magnam error explicabo accusamus sed!</p>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <i class="fas fa-couch fa-4x text-primary"></i>
+                <h3>Relax</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iure vitae laudantium, deserunt
+                    architecto accusamus ad, vero, ipsam commodi pariatur qui beatae labore quae adipisci expedita esse.
+                    Iste aliquid quae quam magnam error explicabo accusamus sed!</p>
+            </div>
+
+            <div class="col-md-4 mt-2">
+                <i class="fas fa-users fa-4x text-primary"></i>
+                <h3>La communauté</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum iure vitae laudantium, deserunt
+                    architecto accusamus ad, vero, ipsam commodi pariatur qui beatae labore quae adipisci expedita esse.
+                    Iste aliquid quae quam magnam error explicabo accusamus sed!</p>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- === TOP PART END === -->
+
+
+    <!-- === TESTIMONIALS START === -->
+    <div class="container">
+        <h2 class="text-center mt-3 mb-5">Témoignages</h2>
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://images.unsplash.com/photo-1474433188271-d3f339f41911?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        class="card-img-top" alt="Témoignage">
+                    <div class="card-body">
+                        <p class="card-text">Le surf n'est pas un sport, c'est un mode de vie, ce n'est pas un loisir.
+                            C'est une façon de regarder les vagues et dire, "Hey poto, allons dancer !"</p>
+                        <p class="card-text"><small class="text-muted">Jeff, Avril 2019</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="https://images.unsplash.com/photo-1476673160081-cf065607f449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80"
+                        class="card-img-top" alt="Témoignage">
+                    <div class="card-body">
+                        <p class="card-text">
+                            Grace à TSP, je fais le tour du monde avec mon van et je fais du surf !
+                            Si l'expérience était à refaire, je le referais plein de fois.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Jean-Michel, Octobre 2018</small></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- === TESTIMONIALS END === -->
+
+    <!-- === PRICES START === -->
+    <div class="container text-center">
+        <h2 class="mt-3 mb-4">Prix</h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card border-secondary mb-3">
+                        <div class="card-header">Semaine d'essai</div>
+                        <div class="card-body">
+                            <h4 class="card-title fs-1">0€</h4>
+                            <p class="card-text">Le kiff</p>
+                            <p class="card-text">A Bali</p>
+                            <p class="card-text">Pendant 1 semaine</p>
+                            <button type="button" class="btn btn-outline-primary w-100">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card border-secondary mb-3">
+                        <div class="card-header">Early Bird</div>
+                        <div class="card-body">
+                            <h4 class="card-title fs-1">15€</h4>
+                            <p class="card-text">Le kiff</p>
+                            <p class="card-text">A Bali</p>
+                            <p class="card-text">Pendant 12 semaines</p>
+                            <button type="button" class="btn btn-primary w-100">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card border-secondary mb-3">
+                        <div class="card-header">En trois fois</div>
+                        <div class="card-body">
+                            <h4 class="card-title fs-1">7€ / mo</h4>
+                            <p class="card-text">Le kiff</p>
+                            <p class="card-text">A Bali</p>
+                            <p class="card-text">Pendant 12 semaines</p>
+                            <button type="button" class="btn btn-primary w-100">S'inscrire</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- === PRICES END === -->
+
+    <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
