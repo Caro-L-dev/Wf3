@@ -1,7 +1,8 @@
 let a = 42;
-console.log(a);
 
-if ( a >= 42 )
+console.log( a );
+
+if (a >= 42)
 {
     console.log(a);
 
@@ -13,12 +14,5 @@ if ( a >= 42 )
 }
 
 console.log( c );
-
-console.log( "-----------" );
-
-for ( let i = 0; i<10; i++ )
-{
-    console.log( i );
-}
 
 console.log( b );

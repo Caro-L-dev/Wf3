@@ -1,28 +1,86 @@
-// var a = true;
-// var b = true;
-// console.log("a", a);
-// console.log("b", b);
+var a = false;
+var b = false;
 
-// ET Logique
+console.log( "a", a );
+console.log( "b", b );
 
-// console.log(a && b, typeof (a && b));
 
-// if (a && b) {
+
+// NON Logique
+
+
+// a et b doivent etre vrai
+if ( a && b )
+{
+    console.log("C'est Vrai");
+}
+else
+{
+    console.log("C'est Faux");
+}
+
+// a et b doivent etre faux
+if ( (!a) && (!b) )
+{
+    console.log("C'est Vrai");
+}
+else
+{
+    console.log("C'est Faux");
+}
+
+
+
+
+// ET Logique 
+
+
+// console.log( a && b, typeof (a && b) );
+
+// if ( a && b )
+// if ( true && false )
+// if ( false )
+// {
 //     console.log("C'est Vrai");
 // }
-// else {
+// else
+// {
 //     console.log("C'est Faux");
 // }
 
-// let age = 12;
-// let gender = "M";
 
-// if ( gender == "F" && age >= 18 ) 
+// let age = 12;
+// let gender = "F";
+// let ID_is_valid = true;
+
+// // if ( false && true && true ) 
+// // if ( true ) 
+// if ( (age >= 18) && (gender == "F") && ID_is_valid ) 
 // {
-//     console.log("entrée gratos");
+//     console.log( "entreé gratos" );
 // }
-// else {
-//     console.log("rentre pas");
+// else
+// {
+//     console.log( "rentre pas" );
+// }
+
+
+
+
+// OU Logique 
+
+
+// console.log( a || b, typeof (a || b) );
+
+// if ( a || b )
+// // if ( true || false )
+// // if ( false )
+// {
+//     console.log("C'est Vrai");
+// }
+// else
+// {
+//     console.log("C'est Faux");
 // }
 
 

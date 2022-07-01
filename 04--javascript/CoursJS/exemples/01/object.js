@@ -6,18 +6,21 @@ var b = {};
 var user = {
     firstname: "John",
     lastname: "DOE"
-}
+};
 
-console.log(`Hello ${user.firstname}, how are you?`);
+console.log( user.firstname );
+console.log( user['firstname'] );
 
-var user2 = {
-    firstname2: "Bob",
-    lastname2: "n"
-}
+var user2 = new Object();
+user2.firstname = "Bob";
+user2.lastname = "DOE";
 
-// Lire le contenu d'un objet
 
-for ( const  key in user)
+
+// Lire le contenue d'un objet
+
+for (let key in user) 
 {
+    // console.log( user.key ); // NE FONCTIONNE PAS
     console.log( user[key] );
 }
