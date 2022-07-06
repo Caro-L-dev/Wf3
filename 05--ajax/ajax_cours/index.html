@@ -5,42 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>AJAX</title>
-    <style>
-        body {
-            margin: 1rem;
-        }
-
-        .rectangle {
-            width: 300px;
-            height: 150px;
-            background-color: blue;
-        }
-
-        button {
-            background-color: blue;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            margin: 1rem;
-            padding: .5rem;
-            cursor: pointer;
-        }
-
-        button:hover {
-            transform: scale(1.25);
-            background-color: rgb(26, 11, 66);
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Cours AJAX</h1>
-    <div class="rectangle">
-        <img src="#" alt="...">
-    </div>
-    <button type="button">Afficher un chien !</button>
-    <script src="./script.js"></script>
+    <main class="container">
+        <div class="square"></div>
+        <button type="button">Afficher un chien 🐕</button>
+
+        <select name="breed-name" id="select-breed">
+            <option value="" selected >Choisir une race -- V●ω●V </option>
+        </select>
+    </main>
+    <script src="./dog-api.js"></script>
 </body>
 
 </html>
