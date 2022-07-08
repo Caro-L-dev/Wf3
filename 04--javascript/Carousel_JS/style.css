@@ -1,0 +1,26 @@
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(27, 27, 143);
+}
+
+.carousel{
+    height: 400px;
+
+    background-image: url(./images/4.jpg);
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 10px;
+    border: white solid 3px;
+
+    transition: ease-in .3s;
+    cursor: pointer;
+}
+
+.carousel:hover{
+    border-color: rgb(86, 56, 253);
+}
