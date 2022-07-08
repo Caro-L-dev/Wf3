@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Manipulation du DOM</title>
+</head>
+
+<body>
+    <main>
+        <h1>Manipulation du DOM</h1>
+
+        <!-- === EXERCICE 1 START === -->
+        <h2>Exercice 1</h2>
+
+        <div class="containerExo1">
+            <h3>Galerie</h3>
+            <div class="gallery">
+                <div class="container">
+                    <img class="mainPic" style="width:100%">
+                    <div class="legend"></div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="./images/arcane.jpg" alt="Arcane" onclick="displayPics(this);">
+                    </div>
+                    <div class="column">
+                        <img src="./images/avenger.jpg" alt="Avenger" onclick="displayPics(this);">
+                    </div>
+                    <div class="column">
+                        <img src="./images/black-sad.jpg" alt="Black sad" onclick="displayPics(this);">
+                    </div>
+                    <div class="column">
+                        <img src="./images/spirou.jpg" alt="Spirou" onclick="displayPics(this);">
+                    </div>
+                </div>
+            </div>
+
+            <!-- === EXERCICE 1 END === -->
+
+            <!-- === EXERCICE 2 START === -->
+            <h2>Exercice 2</h2>
+
+            <h3>Copieur</h3>
+
+            <form>
+                <label for="fname">Votre texte ici :</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">La copie ici :</label>
+                <input type="text" id="lname" name="lname">
+            </form>
+
+            <!-- === EXERCICE 2 END === -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
