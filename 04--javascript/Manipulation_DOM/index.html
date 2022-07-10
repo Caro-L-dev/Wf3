@@ -1,63 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Manipulation du DOM</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <main>
-        <h1>Manipulation du DOM</h1>
+      <h1>Manipulation du DOM</h1>
 
-        <!-- === EXERCICE 1 START === -->
+      <!-- === EXERCICE 1 START === -->
+      <div class="containerExo">
         <h2>Exercice 1</h2>
+        <h3>Galerie</h3>
+        <div class="gallery">
+          <div class="container">
+            <img class="mainPic" style="width: 100%" />
+            <div class="legend"></div>
+          </div>
 
-        <div class="containerExo1">
-            <h3>Galerie</h3>
-            <div class="gallery">
-                <div class="container">
-                    <img class="mainPic" style="width:100%">
-                    <div class="legend"></div>
-                </div>
-
-                <div class="row">
-                    <div class="column">
-                        <img src="./images/arcane.jpg" alt="Arcane" onclick="displayPics(this);">
-                    </div>
-                    <div class="column">
-                        <img src="./images/avenger.jpg" alt="Avenger" onclick="displayPics(this);">
-                    </div>
-                    <div class="column">
-                        <img src="./images/black-sad.jpg" alt="Black sad" onclick="displayPics(this);">
-                    </div>
-                    <div class="column">
-                        <img src="./images/spirou.jpg" alt="Spirou" onclick="displayPics(this);">
-                    </div>
-                </div>
+          <div class="row">
+            <div class="column">
+              <img
+                src="./images/arcane.jpg"
+                alt="Arcane"
+                onclick="displayPics(this);"
+              />
             </div>
+            <div class="column">
+              <img
+                src="./images/avenger.jpg"
+                alt="Avenger"
+                onclick="displayPics(this);"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="./images/black-sad.jpg"
+                alt="Black sad"
+                onclick="displayPics(this);"
+              />
+            </div>
+            <div class="column">
+              <img
+                src="./images/spirou.jpg"
+                alt="Spirou"
+                onclick="displayPics(this);"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- === EXERCICE 1 END === -->
 
-            <!-- === EXERCICE 1 END === -->
+      <!-- === EXERCICE 2 START === -->
+      <div class="containerExo exo2">
+        <h2>Exercice 2</h2>
 
-            <!-- === EXERCICE 2 START === -->
-            <h2>Exercice 2</h2>
+        <h3>Copieur</h3>
 
-            <h3>Copieur</h3>
+        <form>
+          <div class="rowf">
+            <label for="init">Votre texte ici</label>
+            <input type="text" id="init" name="init" />
+          </div>
+          <div class="rowf">
+            <label for="paste">Votre copie ici</label>
+            <input type="text" id="paste" name="paste" />
+          </div>
+        </form>
+      </div>
 
-            <form>
-                <label for="fname">Votre texte ici :</label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">La copie ici :</label>
-                <input type="text" id="lname" name="lname">
-            </form>
+      <!-- === EXERCICE 2 END === -->
 
-            <!-- === EXERCICE 2 END === -->
+      <!-- === EXERCICE 3 START === -->
+      <div class="containerExo">
+        <h2>Tableau de calcul</h2>
+
+        <form>
+          <label>Saisissez un nombre :</label>
+          <input type="number" id="number" name="number" />
+        </form>
+
+        <div>
+          <table>
+            <tr>
+              <th>Nombre</th>
+              <th>Carré</th>
+              <th>Cube</th>
+            </tr>
+            <tr>
+              <td id="initNumber">0</td>
+              <td id="carreNumber">0</td>
+              <td id="cubeNumber">0</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <!-- === EXERCICE 3 END === -->
+
+      <!-- === EXERCICE 4 START === -->
+      <div class="containerExo">
+        <h2>Déplacement carré</h2>
+        <div class="bluesquare-container">
+          <div class="square"></div>
+          <button id="squareBtn">Bouge</button>
+        </div>
+      </div>
+      <!-- === EXERCICE 4 END === -->
+
+      <!-- === EXERCICE 5 START === -->
+      <div class="containerExo">
+        <h2>Déplaçeur</h2>
+        <div class="square-container">
+          <div class="squareG"></div>
+        </div>
+      </div>
+      <!-- === EXERCICE 5 END === -->
     </main>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
