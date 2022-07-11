@@ -1,0 +1,24 @@
+nav{
+    background-color: #FF7F57;
+    padding: .5rem;
+    font-family: sans-serif;
+
+    ul{
+        display: flex;
+        justify-content: flex-start;
+
+        li{
+            margin: 1rem;
+        }
+
+        li h1{
+            color: white;
+            font-weight: bold;
+            margin-right: 3rem;
+        }
+
+        #active{
+            font-weight: bold;
+        }
+    }
+}

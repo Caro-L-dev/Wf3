@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catsting - Races</title>
+</head>
+
+<body>
+    <main>
+        <!-- === NAVBAR START === -->
+        <nav>
+            <ul>
+                <li>
+                    <h1>CatSting</h1>
+                </li>
+                <li>Accueil</li>
+                <li><a href="./facts.html">Anecdotes</a></li>
+                <li><a href="#" id="active">Races</a></li>
+            </ul>
+        </nav>
+        <!-- === NAVBAR END === -->
+
+        <div class="container">
+
+            <div class="breed-panel__container">
+                <div class="up-details">
+                    <h2>Races</h2>
+                    <p>x resultats</p>
+                </div>
+
+                <!-- Filtre par catégories : Pays, genres etc. -->
+                <select name="country" id="ciuntry">Par pays</select>
+                <div class="breed-panel__display">
+                    <ul id="breeds">
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Afficher les infos de la race sélectionnée sur la gauche -->
+            <div class="breed-card__container">
+                <h2>Nom de la race</h2>
+                <img src="#" alt="cat">
+                <p>country</p>
+                <p>origin</p>
+                <p>coat</p>
+                <p>pattern</p>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

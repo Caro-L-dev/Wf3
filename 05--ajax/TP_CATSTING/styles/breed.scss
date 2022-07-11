@@ -1,0 +1,40 @@
+.container{
+    max-width:  800px;
+    margin: 0 auto;
+    padding: 3rem;
+
+    display: flex;
+}
+
+.breed-panel__container{
+    background-color: #343434;
+    color: white;
+
+   // max-width: 300px;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    border-radius: 1rem;
+
+    .up-details{
+        display: flex;
+    }
+
+    h2{
+        color: #FF7F57;
+        font-weight: bold;
+    }
+}
+
+.breed-card__container{
+    background-color: #343434;
+    color: white;
+
+ //   max-width: 800px;
+
+    padding: 1rem;
+    margin: 1rem;
+
+    border-radius: 1rem;
+}

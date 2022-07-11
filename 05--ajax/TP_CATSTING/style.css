@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+nav {
+  background-color: #FF7F57;
+  padding: 0.5rem;
+  font-family: sans-serif;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+}
+nav ul li {
+  margin: 1rem;
+}
+nav ul li h1 {
+  color: white;
+  font-weight: bold;
+  margin-right: 3rem;
+}
+nav ul #active {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+}
+
+.breed-panel__container {
+  background-color: #343434;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.breed-panel__container .up-details {
+  display: flex;
+}
+.breed-panel__container h2 {
+  color: #FF7F57;
+  font-weight: bold;
+}
+
+.breed-card__container {
+  background-color: #343434;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.facts__container button {
+  width: 100%;
+  background-color: #FF7F57;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.facts__container .fact-card {
+  background-color: #343434;
+  color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.facts__container .fact-card h2 {
+  color: #FF7F57;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+.facts__container{
+    button{
+        width: 100%;
+        background-color: #FF7F57;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        padding: .5rem;
+    }
+
+    .fact-card{
+        background-color: #343434;
+        color: white;
+    
+        padding: 1rem;
+        margin: 1rem;
+    
+        border-radius: 1rem;
+
+    
+        h2{
+            color: #FF7F57;
+            font-weight: bold;
+        }
+    }
+}
