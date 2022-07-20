@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    
+    .exo{
+        margin: 1rem;
+    }
+
+    input {
+        max-width: 5rem;
+        margin-left: .3rem;
+    }
+
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+button{
+    margin: 1rem;
+}
+
+
+span {
+    background-color: red;
+    border-radius: .2rem;
+    padding: .3rem;
+    color: aliceblue;
+}

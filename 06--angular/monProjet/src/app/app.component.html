@@ -1,0 +1,35 @@
+<main>
+  <div class="exo">
+    <h2>Exercice 01</h2>
+
+    <input type="text" placeholder="color" (input)="getColor($event)">
+    <div class="box" [ngStyle]="{ 'background-color': bgColor }"></div>
+
+  </div>
+
+  <!-- === -->
+  <div class="exo">
+    <h2>Exercice 02</h2>
+
+    <button (click)="getVisibility()">
+      {{buttonName}}
+    </button>
+    <br>
+    <span *ngIf="visibility">Hello!</span>
+  </div>
+
+
+  <!-- === -->
+  <div class="exo">
+    <h2>Exercice 3</h2>
+
+    <ul *ngFor="let user of users; let index = index">
+      <li>{{index}}</li>
+      <li>Prénom: {{user.firstName}}</li>
+      <li>Nom: {{user.lastName}}</li>
+      
+  </ul>
+  </div>
+
+
+</main>
