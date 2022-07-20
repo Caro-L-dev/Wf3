@@ -23,8 +23,8 @@
   <div class="exo">
     <h2>Exercice 3</h2>
 
-    <ul *ngFor="let user of users; let index = index">
-      <li>{{index}}</li>
+    <ul *ngFor="let user of users; index as i">
+      <li>{{ i + 1 }}</li>
       <li>Prénom: {{user.firstName}}</li>
       <li>Nom: {{user.lastName}}</li>
       
