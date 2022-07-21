@@ -8,7 +8,6 @@
         </p>
         <a routerLink="/index-show-planets"  class="btn mt-4">Découvrir</a>
     </div>
-    {{ character?.name }}
     <div class="card card-2">
         <h1 class="title text-secondary">Les chiffres</h1>
         <p>
@@ -23,7 +22,7 @@
                             Nombre d'êtres vivants recensés
                         </div>
                         <div class="info">
-                            82
+                            {{ people?.count }}
                         </div>
                     </div>
                 </div>
@@ -34,7 +33,7 @@
                             Nombre de véhicules recensés
                         </div>
                         <div class="info">
-                            39
+                            {{ vehicles?.count }}
                         </div>
                     </div>
                 </div>
@@ -47,7 +46,7 @@
                             Nombre de planètes recensées
                         </div>
                         <div class="info">
-                            60
+                            {{ planets?.count }}
                         </div>
                     </div>
                 </div>

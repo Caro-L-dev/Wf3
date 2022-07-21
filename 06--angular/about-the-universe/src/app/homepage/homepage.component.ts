@@ -10,20 +10,41 @@ import { HttpClient } from '@angular/common/http';
 export class HomepageComponent implements OnInit {
 
   SWAPI_PEOPLE_URL = 'https://swapi.dev/api/people/1/';
-  character: any = [];
+  people: any = [];
+  vehicles: any = [];
+  planets: any = [];
 
   // Injecter le service
   constructor(private httpService: HttpClient) { }
 
   ngOnInit(): void {
-    this.getCharacter();
+    this.getPeople();
+    this.getVehicles();
+    this.getPlanets();
   };
 
-  getCharacter() {
+  getPeople() {
     this.httpService
-    .get(this.SWAPI_PEOPLE_URL)
+    .get('https://swapi.dev/api/people')
     .subscribe( data => {
-      this.character = data;
-    })
-  }
+      this.people = data;
+    });
+  };
+
+  getVehicles() {
+    this.httpService
+    .get('https://swapi.dev/api/vehicles')
+    .subscribe( data => {
+      this.vehicles = data;
+    });
+  };
+
+  getPlanets() {
+    this.httpService
+    .get('https://swapi.dev/api/planets')
+    .subscribe( data => {
+      this.planets = data;
+    });
+  };
+
 };

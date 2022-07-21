@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { IndexShowPlanetsComponent } from './index-show-planets/index-show-planets.component';
+import { IndexPlanetsComponent } from './index-planets/index-planets.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomepageComponent,
-    IndexShowPlanetsComponent
+    IndexShowPlanetsComponent,
+    IndexPlanetsComponent
   ],
   imports: [
     BrowserModule,
