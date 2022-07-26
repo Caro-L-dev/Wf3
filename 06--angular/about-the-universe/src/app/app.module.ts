@@ -10,6 +10,8 @@ import { IndexShowPlanetsComponent } from './index-show-planets/index-show-plane
 import { IndexPlanetsComponent } from './index-planets/index-planets.component';
 import { IndexVehiclesComponent } from './index-vehicles/index-vehicles.component';
 import { IndexShowVehiclesComponent } from './index-show-vehicles/index-show-vehicles.component';
+import { IndexPeoplesComponent } from './index-peoples/index-peoples.component';
+import { IndexShowPeoplesComponent } from './index-show-peoples/index-show-peoples.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { IndexShowVehiclesComponent } from './index-show-vehicles/index-show-veh
     IndexShowPlanetsComponent,
     IndexPlanetsComponent,
     IndexVehiclesComponent,
-    IndexShowVehiclesComponent
+    IndexShowVehiclesComponent,
+    IndexPeoplesComponent,
+    IndexShowPeoplesComponent
   ],
   imports: [
     BrowserModule,
