@@ -1,13 +1,13 @@
 
     <div class="card sticky flex tall">
         <div class="card-header">
-            <h2 class="title text-primary">Planètes</h2>
+            <h2 class="title text-primary">Véhicules</h2>
             <div class="form-group">
-                <select *ngIf="planets.length" (change)="filterByPopulation($event)" class="select pr-5">
-                    <option value="">Par population</option>
-                    <option value="1">0 à 100.000</option>
-                    <option value="2">0 à 100.000.000</option>
-                    <option value="3">+ de 100.000.000</option>
+                <select *ngIf="vehicles.length" (change)="filterByPrice($event)" class="select pr-5">
+                    <option value="">Par prix</option>
+                    <option value="1">0 à 10.000</option>
+                    <option value="2">10.000 à 100.000</option>
+                    <option value="3">+ de 100.000</option>
                 </select>
             </div>
             <div class="form-group">
@@ -24,20 +24,21 @@
                 <thead>
                     <tr>
                         <th>Nom</th>
-                        <th>Terrain</th>
+                        <th>Prix</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr (click)="showPlanet(planet)" *ngFor="let planet of planets;">
-                        <td>{{planet.name}}</td>
-                        <td>{{planet.terrain}}</td>
+                    <tr (click)="showVehicle(vehicle)" *ngFor="let vehicle of vehicles;">
+                        <td>{{vehicle.name}}</td>
+                        <td>{{vehicle.cost_in_credits}}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="card-footer">
             <div class="medium-information mt-5">
-                <span class="info" *ngIf="planets.length">{{ planets.length }} resultat(s)</span>
+                <span class="info" *ngIf="vehicles.length">{{ vehicles.length }} resultat(s)</span>
             </div>
         </div>
     </div>
+

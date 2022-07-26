@@ -1,0 +1,55 @@
+<main class="container container-1-2">
+    <app-index-vehicles (sendVehicleToParent)="showVehicles($event)"></app-index-vehicles>
+    <div class="card">
+        <div class="information mb-5">
+            <div>
+                <div class="title text-secondary">{{vehicle?.name}}</div>
+                <div class="info mb-3 text-secondary">Prix:
+                    <span class="text-primary">{{vehicle?.cost_in_credits}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid-2 mt-5 mb-5 w-100 text-secondary">
+            <div class="information">
+                <span class="fas fa-motorcycle fa-3x img"></span>
+                <div>
+                    <p class="bold">Modèle</p>
+                    <p class="text-primary">{{vehicle?.model}}</p>
+                </div>
+            </div>
+            <div class="information">
+                <span class="fas fa-users fa-3x img"></span>
+                <div>
+                    <p class="bold">Nombre de passagers possible</p>
+                    <p class="text-primary">{{vehicle?.passengers}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-grid-2 mt-5 mb-5 w-100 text-secondary">
+            <div class="information">
+                <span class="fas fa-text-height fa-3x img"></span>
+                <div>
+                    <p class="bold">Taille</p>
+                    <p class="text-primary">{{vehicle?.length}}</p>
+                </div>
+            </div>
+            <div class="information">
+                <span class="fas fa-clock fa-3x img"></span>
+                <div>
+                    <p class="bold">Consommables</p>
+                    <p class="text-primary">{{vehicle?.consumables}}</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-5 d-flex right">
+            <div class="btn">En savoir plus</div>
+        </div>
+    </div>
+
+    <p class="card info text-secondary">
+        Sélectionnez le contenu à afficher !
+    </p>
+</main>

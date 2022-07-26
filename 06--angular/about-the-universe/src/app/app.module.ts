@@ -8,6 +8,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { IndexShowPlanetsComponent } from './index-show-planets/index-show-planets.component';
 import { IndexPlanetsComponent } from './index-planets/index-planets.component';
+import { IndexVehiclesComponent } from './index-vehicles/index-vehicles.component';
+import { IndexShowVehiclesComponent } from './index-show-vehicles/index-show-vehicles.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { IndexPlanetsComponent } from './index-planets/index-planets.component';
     NavbarComponent,
     HomepageComponent,
     IndexShowPlanetsComponent,
-    IndexPlanetsComponent
+    IndexPlanetsComponent,
+    IndexVehiclesComponent,
+    IndexShowVehiclesComponent
   ],
   imports: [
     BrowserModule,

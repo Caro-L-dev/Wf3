@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index-show-planets.component.scss']
 })
 export class IndexShowPlanetsComponent implements OnInit {
+  planet: any = null;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  showPlanet($event: any) {
+    this.planet = $event;
+    console.log(this.planet);
   }
 
 }

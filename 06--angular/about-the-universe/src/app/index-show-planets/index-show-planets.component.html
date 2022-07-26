@@ -1,2 +1,55 @@
+<main class="container container-1-2">
+    <app-index-planets (sendPlanetToParent)="showPlanet($event)"></app-index-planets>
+    <div class="card">
+        <div class="information mb-5">
+            <div>
+                <div class="title text-secondary">{{planet?.name}}</div>
+                <div class="info mb-3 text-secondary">Population:
+                    <span class="text-primary">{{planet?.population}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="d-grid-2 mt-5 mb-5 w-100 text-secondary">
+            <div class="information">
+                <span class="far fa-circle fa-3x img"></span>
+                <div>
+                    <p class="bold">Diamètre</p>
+                    <p class="text-primary">{{planet?.diameter}}</p>
+                </div>
+            </div>
+            <div class="information">
+                <span class="fas fa-thermometer-full fa-3x img"></span>
+                <div>
+                    <p class="bold">Climat</p>
+                    <p class="text-primary">{{planet?.climate}}</p>
+                </div>
+            </div>
+        </div>
 
-<app-index-planets></app-index-planets>
+        <div class="d-grid-2 mt-5 mb-5 w-100 text-secondary">
+            <div class="information">
+                <span class="fas fa-magnet fa-3x img"></span>
+                <div>
+                    <p class="bold">Gravité</p>
+                    <p class="text-primary">{{planet?.gravity}}</p>
+                </div>
+            </div>
+            <div class="information">
+                <span class="fas fa-tree fa-3x img"></span>
+                <div>
+                    <p class="bold">Terrain</p>
+                    <p class="text-primary">{{planet?.terrain}}</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-5 d-flex right">
+            <div class="btn">En savoir plus</div>
+        </div>
+    </div>
+
+    <p class="card info text-secondary">
+        Sélectionnez le contenu à afficher !
+    </p>
+</main>
