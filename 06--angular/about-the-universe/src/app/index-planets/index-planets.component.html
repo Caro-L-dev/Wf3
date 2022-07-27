@@ -3,7 +3,7 @@
         <div class="card-header">
             <h2 class="title text-primary">Planètes</h2>
             <div class="form-group">
-                <select *ngIf="planets.length" (change)="filterByPopulation($event)" class="select pr-5">
+                <select *ngIf="planets.length" #element (change)="filterByPopulation(element)" class="select pr-5">
                     <option value="">Par population</option>
                     <option value="1">0 à 100.000</option>
                     <option value="2">0 à 100.000.000</option>

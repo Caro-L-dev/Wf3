@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+// import { Planet } from '../interfaces/planet';
 
 @Component({
   selector: 'app-homepage',

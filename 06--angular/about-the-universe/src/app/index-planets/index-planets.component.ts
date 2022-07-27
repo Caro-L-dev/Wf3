@@ -1,5 +1,7 @@
 import { Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import {Planet} from "../interfaces/planet";
+import { PlanetDetails } from '../interfaces/planet-details';
 
 @Component({
   selector: 'app-index-planets',
@@ -9,15 +11,14 @@ import { HttpClient } from '@angular/common/http';
 
 
 export class IndexPlanetsComponent implements OnInit {
-
-  planets: any = [];
-  planetsSaved : any = [];
-  countPlanets: any;
-  countPages: any;
+  planets: Planet[] = [];
+  planetsSaved: Planet[] = [];
+  countPlanets!: number;
+  countPages!: number;
 
   @Output() sendPlanetToParent = new EventEmitter;
   
-  showPlanet(planet: any) {
+  showPlanet(planet: Planet) {
     this.sendPlanetToParent.emit(planet);
   }
 
@@ -32,7 +33,7 @@ export class IndexPlanetsComponent implements OnInit {
 
   async getCountPlanets(): Promise<void> {
     return new Promise( (resolve) => {
-      this.httpClient.get("https://swapi.dev/api/planets").subscribe( (pageOfPlanets: any) => {
+      this.httpClient.get<PlanetDetails>("https://swapi.dev/api/planets").subscribe( (pageOfPlanets) => {
         this.countPlanets = pageOfPlanets.count;
         resolve();
       });
@@ -48,10 +49,10 @@ export class IndexPlanetsComponent implements OnInit {
 
   getPlanets() {
     this.planets = [];
-//    console.log(this.countPages);
+    //console.log(this.countPages);
     
     for (let index = 1; index <= this.countPages; index++) {
-      this.httpClient.get("https://swapi.dev/api/planets/?page=" + index ).subscribe((pageOfPlanets: any) => {
+      this.httpClient.get<PlanetDetails>("https://swapi.dev/api/planets/?page=" + index ).subscribe((pageOfPlanets) => {
         this.planets = this.planets.concat(pageOfPlanets.results);
       this.planetsSaved = this.planetsSaved.concat(pageOfPlanets.results);
       })
@@ -62,18 +63,13 @@ export class IndexPlanetsComponent implements OnInit {
     this.planets = this.planetsSaved;
    // console.log(this.planets);
     if(event.target.value === "1"){
-      this.planets = this.planets.filter((planet: any )=> planet.population <= 100000);
+      this.planets = this.planets.filter((planet: Planet )=> Number(planet.population) <= 100000);
     }
     if(event.target.value === "2"){
-      this.planets = this.planets.filter((planet: any )=> planet.population <= 100000 && planet.population <= 100000000);
+      this.planets = this.planets.filter((planet: Planet )=> Number(planet.population) <= 100000 && Number(planet.population) <= 100000000);
     }
     if(event.target.value === "3"){
-      this.planets = this.planets.filter((planet: any )=> planet.population <= 100000000 );
+      this.planets = this.planets.filter((planet: Planet )=> Number(planet.population) <= 100000000 );
     }
   };
 }
-
-
-
-
-

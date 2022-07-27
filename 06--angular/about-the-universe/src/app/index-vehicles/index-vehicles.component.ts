@@ -1,5 +1,7 @@
 import { Component, EventEmitter, OnInit, Output} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Vehicle } from '../interfaces/vehicle';
+import { VehicleDetails } from '../interfaces/vehicle-details';
 
 @Component({
   selector: 'app-index-vehicles',
@@ -10,14 +12,14 @@ import { HttpClient } from '@angular/common/http';
 
 export class IndexVehiclesComponent implements OnInit {
 
-  vehicles: any = [];
-  vehiclesSaved : any = [];
-  countVehicles: any;
-  countPages: any;
+  vehicles: Vehicle[] = [];
+  vehiclesSaved : Vehicle[] = [];
+  countVehicles!: number;
+  countPages!: number;
 
   @Output() sendVehicleToParent = new EventEmitter;
   
-  showVehicle(vehicle: any) {
+  showVehicle(vehicle: Vehicle) {
     this.sendVehicleToParent.emit(vehicle);
   }
 
@@ -32,7 +34,7 @@ export class IndexVehiclesComponent implements OnInit {
 
   async getCountVehicles(): Promise<void> {
     return new Promise( (resolve) => {
-      this.httpClient.get("https://swapi.dev/api/vehicles").subscribe( (pageOfVehicles: any) => {
+      this.httpClient.get<VehicleDetails>("https://swapi.dev/api/vehicles").subscribe( (pageOfVehicles) => {
         this.countVehicles = pageOfVehicles.count;
         resolve();
       });
@@ -51,7 +53,7 @@ export class IndexVehiclesComponent implements OnInit {
     console.log(this.countPages);
     
     for (let index = 1; index <= this.countPages; index++) {
-      this.httpClient.get("https://swapi.dev/api/vehicles/?page=" + index ).subscribe((pageOfVehicles: any) => {
+      this.httpClient.get<VehicleDetails>("https://swapi.dev/api/vehicles/?page=" + index ).subscribe((pageOfVehicles) => {
         this.vehicles = this.vehicles.concat(pageOfVehicles.results);
       this.vehiclesSaved = this.vehiclesSaved.concat(pageOfVehicles.results);
       })
@@ -62,18 +64,13 @@ export class IndexVehiclesComponent implements OnInit {
     this.vehicles = this.vehiclesSaved;
     console.log(this.vehicles);
     if(event.target.value === "1"){
-      this.vehicles = this.vehicles.filter((vehicle: any )=> vehicle.cost_in_credits <= 10000);
+      this.vehicles = this.vehicles.filter((vehicle: Vehicle )=> Number(vehicle.cost_in_credits) <= 10000);
     }
     if(event.target.value === "2"){
-      this.vehicles = this.vehicles.filter((vehicle: any )=> vehicle.cost_in_credits >= 10000 && vehicle.cost_in_credits <= 100000);
+      this.vehicles = this.vehicles.filter((vehicle: Vehicle )=> Number(vehicle.cost_in_credits) >= 10000 && Number(vehicle.cost_in_credits) <= 100000);
     }
     if(event.target.value === "3"){
-      this.vehicles = this.vehicles.filter((vehicle: any )=> vehicle.cost_in_credits <= 100000 );
+      this.vehicles = this.vehicles.filter((vehicle: Vehicle )=> Number(vehicle.cost_in_credits) <= 100000 );
     }
   };
 }
-
-
-
-
-

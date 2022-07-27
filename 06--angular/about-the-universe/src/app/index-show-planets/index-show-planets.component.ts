@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Planet} from "../interfaces/planet";
 
 @Component({
   selector: 'app-index-show-planets',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index-show-planets.component.scss']
 })
 export class IndexShowPlanetsComponent implements OnInit {
-  planet: any = null;
+  planet!: Planet;
 
   constructor() { }
 
@@ -15,7 +16,5 @@ export class IndexShowPlanetsComponent implements OnInit {
 
   showPlanet($event: any) {
     this.planet = $event;
-    console.log(this.planet);
   }
-
 }

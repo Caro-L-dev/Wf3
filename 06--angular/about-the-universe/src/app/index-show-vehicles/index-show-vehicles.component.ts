@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Vehicle } from '../interfaces/vehicle';
 
 @Component({
   selector: 'app-index-show-vehicles',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./index-show-vehicles.component.scss']
 })
 export class IndexShowVehiclesComponent implements OnInit {
-  vehicle: any = null;
+  vehicle!: Vehicle;
 
   constructor() { }
 
@@ -18,4 +19,3 @@ export class IndexShowVehiclesComponent implements OnInit {
   }
 
 }
-
