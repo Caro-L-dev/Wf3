@@ -1,0 +1,12 @@
+{
+  "name": "btc-rate",
+  "version": "1.0.0",
+  "description": "Affiche le cours du BTC",
+  "main": "btc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node btc.js port=3200"
+  },
+  "author": "",
+  "license": "ISC"
+}
