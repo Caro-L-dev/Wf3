@@ -19,18 +19,9 @@ app.set('view engine', 'html');
 // Page routing
 // --
 
-app.get('/', (request, response) => {
-  // response.send('homepage');
-    response.render('homepage');
-});
-
-app.get('/contact', (request, response) => {
-    response.render('contact');
-});
-
-app.get('/about', (request, response) => {
-    response.render('about');
-});
+app.use('/', require("./controllers/homepage"));
+app.use('/', require("./controllers/contact"));
+app.use('/', require("./controllers/about"));
 
 
 // Start server
