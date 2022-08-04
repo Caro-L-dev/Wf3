@@ -15,6 +15,9 @@ app.set('views', path.join(__dirname, 'views'));
 // Définition du moteur de rendu.
 app.set('view engine', 'html');
 
+// Define public routing (for css).
+app.use(express.static(__dirname + '/public'));
+
 
 // Page routing
 // --
