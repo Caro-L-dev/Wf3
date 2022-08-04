@@ -6,9 +6,6 @@ Electron est un framework pour construire des applications de bureau en utilisan
 
 ---
 
-~  
-~  
-
 ### Initialiser le projet
 
 `npm init`  
@@ -33,3 +30,38 @@ Electron est un framework pour construire des applications de bureau en utilisan
 #### Extension Vs Code
 
  Ejs Language support
+
+ ---
+
+# Exercice Meteo App 
+Note : Vive les console.log
+
+1. Récupération de l'adresse IP via l'api : <http://api.my-ip.io/ip>
+2. Récupération de la géocalisation sur la base de l'ip via l'api : <http://ip-api.com/json/${ip>}
+3. Récupération des données météo sur la base de la latitude/longitude via l'api: <https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude={longitude}&hourly=temperature_2m,relativehumidity_2m,windspeed_10m>
+
+4. Traitement des données météo
+
+- Créer un tableau multidimentionnel
+
+```
+- Première dimension = 
+    [
+        'date1' = [],
+        'date2' = [],
+        'date3' = []
+    ]
+
+    'date1' = [{
+        time: '00:00',
+        temperature: '00',
+        ...
+    }]
+
+- Seconde dimension = 
+   'date1' = [{
+            time: '00:00',
+            temperature: "00",
+            humidity: "00",
+            wind: "00",
+        }],

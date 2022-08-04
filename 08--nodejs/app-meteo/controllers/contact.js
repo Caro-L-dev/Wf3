@@ -1,4 +1,5 @@
 const express = require('express');
+const year = require('../utils/date');
 const router = express.Router();
 
 // Page definition
@@ -7,6 +8,8 @@ const router = express.Router();
 router.get('/contact', (request, response) => {
     response.render('contact', {
         page_name: "contact",
+
+        year: year,
     });
 });
 
