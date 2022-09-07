@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>📝 To-do List</title>
+</head>
+
+<body>
+    <h1>📝 To-do List</h1>
+
+    <form method="POST" action="/task">
+        <input type="text" placeholder="Nouvelle tâche" name="task" autofocus required>
+        <button type="submit">Ajouter</button>
+    </form>
+
+
+    <ul>
+
+        <% tasks.forEach((task, idx)=> {%>
+
+            <%if (task.done){ %>
+
+
+                <li>
+                    <s>
+                        <%= task.title %>
+                    </s> | <a href="/task/<%= idx %>/delete">❌</a>
+                </li>
+
+                <%} else { %>
+
+                    <li>
+                        <!-- Indique le numéro d'index selon la tâche. -->
+                        <strong><%= idx %></strong> 
+                        <%= task.title %>
+                            | <a href="/task/<%= idx %>/done">✅</a>
+                    </li>
+
+                    <%}%>
+
+                        <% }) %>
+
+    </ul>
+
+</body>
+
+</html>
